@@ -22,6 +22,9 @@
       "typedRoutes": true,
       "tsconfigPaths": true
     },
+    "experimental": {
+      "newArchEnabled": false
+    },
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
