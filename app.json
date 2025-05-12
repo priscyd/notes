@@ -22,9 +22,6 @@
       "typedRoutes": true,
       "tsconfigPaths": true
     },
-    "experimental": {
-      "newArchEnabled": false
-    },
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -33,9 +30,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.priscyd.notes-app"
@@ -54,6 +49,9 @@
       "eas": {
         "projectId": "aaa32451-c9b3-422d-abe8-4c8bde57eb64"
       }
+    },
+    "experimental": {
+      "newArchEnabled": false
     }
   }
 }
