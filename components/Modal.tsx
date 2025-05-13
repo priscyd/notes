@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Modal, Text, View, TouchableOpacity } from "react-native"
 import { TextInput } from "react-native-gesture-handler"
+import useNoteStore from "~/store/store"
 
 type ViewNoteModalProps ={
     visible : boolean,
@@ -12,13 +13,18 @@ const AddNoteModal = ({visible, setVisible}:ViewNoteModalProps) =>{
 
     const [note, setNote] = useState('')
 
+    const { addNote } = useNoteStore()
+
     const handleAddNote= ()=>{
         /**
          * 
          * Add note
          */
-
-        setNote("Something happened")
+        const newNote = {
+            id:"",
+            title: note
+        }
+        addNote(newNote)
         setVisible(false)
     }
 
