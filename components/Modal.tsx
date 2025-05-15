@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Modal, Text, View, TouchableOpacity } from "react-native"
 import { TextInput } from "react-native-gesture-handler"
 import useNoteStore from "~/store/store"
+import { nanoid } from "nanoid/non-secure"
 
 type ViewNoteModalProps ={
     visible : boolean,
@@ -21,7 +22,7 @@ const AddNoteModal = ({visible, setVisible}:ViewNoteModalProps) =>{
          * Add note
          */
         const newNote = {
-            id:"",
+            id: nanoid(),
             title: note
         }
         addNote(newNote)
